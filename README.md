@@ -11,8 +11,7 @@ Built with vanilla HTML, CSS, and JavaScript. No build step. No dependencies.
 [![No dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](#)
 [![Single file](https://img.shields.io/badge/single--file-yes-success)](#)
 
-<!-- Replace with your live demo URL after enabling GitHub Pages -->
-**[▶ Live Demo](https://YOUR-USERNAME.github.io/novaplay/)**
+**[▶ Live Demo](https://soheltanbir.github.io/nova-video-player/)** · **[Source](https://github.com/SohelTanbir/nova-video-player)**
 
 </div>
 
@@ -81,7 +80,7 @@ npx serve
 ```
 Then visit `http://localhost:8000/index.html`.
 
-**3. GitHub Pages** — push this repo, then enable Pages (Settings → Pages → Deploy from branch → `main` / root). Your player goes live at `https://YOUR-USERNAME.github.io/novaplay/`.
+**3. GitHub Pages** — push this repo, then enable Pages (Settings → Pages → Deploy from branch → `main` / root). Your player goes live at `https://soheltanbir.github.io/nova-video-player/`.
 
 ---
 

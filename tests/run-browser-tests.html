@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaPlay — Integration Test Runner</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0f0f0f; color: #e8e8e8; font-family: system-ui, "Segoe UI", sans-serif; }
+  header { padding: 14px 20px; background: #161616; border-bottom: 1px solid #333; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; position: sticky; top: 0; z-index: 10; }
+  header h1 { font-size: 16px; margin: 0; color: #0a84ff; }
+  #runBtn { background: #0078d7; color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; }
+  #runBtn:hover { background: #1a8be3; }
+  #status { font-weight: 600; font-size: 13px; }
+  .status.pass { color: #34c759; }
+  .status.fail { color: #ff453a; }
+  main { display: flex; gap: 0; height: calc(100vh - 58px); }
+  #left { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+  #summary { padding: 10px 20px; font-size: 13px; border-bottom: 1px solid #222; }
+  #summary h3 { margin: 0 0 6px; font-size: 14px; }
+  #summary ul { margin: 6px 0 0 18px; color: #ff9f0a; }
+  #output { flex: 1; overflow-y: auto; padding: 12px 20px; font-family: ui-monospace, Consolas, monospace; font-size: 12px; line-height: 1.5; }
+  .test-line { padding: 2px 0; }
+  .test-line.pass { color: #34c759; }
+  .test-line.fail { color: #ff453a; }
+  .test-line.info { color: #999; }
+  #right { width: 46%; border-left: 1px solid #333; display: flex; flex-direction: column; }
+  #right .label { padding: 6px 12px; font-size: 11px; color: #888; background: #161616; border-bottom: 1px solid #222; }
+  iframe { flex: 1; border: none; background: #000; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🎬 NovaPlay — Integration Tests</h1>
+  <button id="runBtn">Re-run</button>
+  <div id="status">Loading…</div>
+  <div style="margin-left:auto;font-size:12px;color:#888">Tests run against the live player (right)</div>
+</header>
+<main>
+  <div id="left">
+    <div id="summary"></div>
+    <div id="output"></div>
+  </div>
+  <div id="right">
+    <div class="label">LIVE PLAYER (../index.html)</div>
+    <iframe id="player" src="../index.html" title="player"></iframe>
+  </div>
+</main>
+<script src="test-suite.js"></script>
+</body>
+</html>

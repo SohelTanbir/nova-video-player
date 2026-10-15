@@ -1,0 +1,33 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (if you add tooling later)
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+build/
+
+# Personal / local media
+*.mp4
+*.mkv
+*.webm
+*.avi
+*.mov
+*.m4v
+!samples/*
+
+# Backups
+*.backup.html

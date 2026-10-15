@@ -2,14 +2,14 @@
 
 # 🎬 NovaPlay
 
-**An advanced, single-file web video player — playlist, equalizer, color correction, A–B loop, resume playback, scrub previews, and more.**
+**An advanced web video player — playlist, equalizer, color correction, A–B loop, resume playback, scrub previews, and more.**
 
 Built with vanilla HTML, CSS, and JavaScript. No build step. No dependencies.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-f7df1e?logo=javascript&logoColor=black)](#)
 [![No dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](#)
-[![Single file](https://img.shields.io/badge/single--file-yes-success)](#)
+[![No build step](https://img.shields.io/badge/build%20step-none-success)](#)
 
 **[▶ Live Demo](https://soheltanbir.github.io/nova-video-player/)** · **[Source](https://github.com/SohelTanbir/nova-video-player)**
 
@@ -63,7 +63,7 @@ Built with vanilla HTML, CSS, and JavaScript. No build step. No dependencies.
 
 ## 🚀 Quick start
 
-Because NovaPlay is a single file, you can use it three ways:
+Because NovaPlay is plain HTML, CSS, and JavaScript, you can use it three ways:
 
 **1. Just open it**
 ```bash
@@ -117,7 +117,11 @@ Then visit `http://localhost:8000/index.html`.
 
 ```
 nova-video-player/
-├── index.html                    # ⭐ the entire player (single file)
+├── index.html                    # markup + control layout
+├── css/
+│   └── style.css                 # all styles + themes
+├── js/
+│   └── app.js                    # all player logic
 ├── README.md
 ├── LICENSE                       # MIT
 ├── docs/

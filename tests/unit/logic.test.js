@@ -1,6 +1,6 @@
 // ============================================================
 // NovaPlay — Pure logic unit tests (Node.js runnable)
-// Mirrors the pure helper functions in index.html
+// Mirrors the pure helper functions in js/app.js
 // ============================================================
 
 /* ---- Pure helpers (copied from the player) ---- */

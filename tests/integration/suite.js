@@ -1,7 +1,7 @@
 // ============================================================
 // NovaPlay — Browser integration tests
 // Runs against the real player loaded in an iframe.
-// Open tests/run-browser-tests.html (served via http://)
+// Open tests/integration/runner.html (served via http://)
 // ============================================================
 
 (function () {

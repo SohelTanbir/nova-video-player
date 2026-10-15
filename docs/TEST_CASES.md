@@ -229,12 +229,12 @@ Covers all features of the PotPlayer-inspired web video player.
 
 ### Unit tests (Node.js)
 ```bash
-cd "H:/Full Stack Web Development/My Projects/Players/Video Player/tests"
-node unit-logic.js
+cd "H:/Full Stack Web Development/My Projects/Players/Video Player"
+node tests/unit/logic.test.js
 ```
 
 ### Browser integration tests
-1. Open `tests/run-browser-tests.html` in Chrome/Edge/Firefox
+1. Serve the folder (`npx serve`) and open `tests/integration/runner.html`
 2. Open the browser Console (F12)
 3. Test results print automatically; a pass/fail summary is shown
 

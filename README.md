@@ -116,16 +116,19 @@ Then visit `http://localhost:8000/index.html`.
 ## 📁 Project structure
 
 ```
-novaplay/
-├── index.html                 # the entire player (single file)
+nova-video-player/
+├── index.html                    # ⭐ the entire player (single file)
 ├── README.md
-├── LICENSE                    # MIT
-├── TEST_CASES.md              # manual test plan (18 sections)
-├── SUGGESTIONS.md             # feature / UI roadmap
+├── LICENSE                       # MIT
+├── docs/
+│   ├── TEST_CASES.md             # manual test plan (18 sections)
+│   └── SUGGESTIONS.md            # feature / UI roadmap
 └── tests/
-    ├── unit-logic.js          # 35 pure-logic tests (Node.js)
-    ├── test-suite.js          # browser integration tests
-    └── run-browser-tests.html # test runner (loads the live player in an iframe)
+    ├── unit/
+    │   └── logic.test.js         # 35 pure-logic tests (Node.js)
+    └── integration/
+        ├── runner.html           # browser test page
+        └── suite.js              # ~90 assertions against the live player
 ```
 
 ---
@@ -135,7 +138,7 @@ novaplay/
 **Unit tests** (pure logic — time formatting, subtitle parsing, playlist reorder, EQ presets):
 
 ```bash
-node tests/unit-logic.js
+node tests/unit/logic.test.js
 # → 35 passed, 0 failed
 ```
 
@@ -143,7 +146,7 @@ node tests/unit-logic.js
 
 ```bash
 npx serve
-# then open http://localhost:3000/tests/run-browser-tests.html
+# then open http://localhost:3000/tests/integration/runner.html
 ```
 
 The test runner also shows the live player side-by-side.
@@ -165,7 +168,7 @@ The test runner also shows the live player side-by-side.
 
 ## 🗺️ Roadmap
 
-See [`SUGGESTIONS.md`](SUGGESTIONS.md) for the full list. Highlights not yet built:
+See [`docs/SUGGESTIONS.md`](docs/SUGGESTIONS.md) for the full list. Highlights not yet built:
 HLS/live streaming, Chromecast, clip/GIF export, multi audio-track switching, online subtitle search.
 
 ---
